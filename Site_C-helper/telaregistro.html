@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/1ab94d0eba.js" crossorigin="anonymous"></script>
+  <title>Cadastro</title>
+  <link rel="shortcut icon" href="img/logochelper.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/registro.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+  <div>
+    <header>
+      <br>
+      <br>
+      <br>
+      <span class="text-logo">C-Helper.</span>
+      <span class="line-left">
+    </header>
+  </div>
+  <div id="main-container">
+    <h2>Registro</h2>
+    <br>
+    <form id="register-form" action="">
+      <div class="full-box">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" data-min-length="2" data-email-validate>
+      </div>
+
+      <div class="half-box spacing">
+          <label for="name">Nome</label>
+          <input type="text" name="name" id="name" placeholder="Digite seu nome" data-required data-min-length="3" data-max-length="16">
+      </div>
+
+      <div class="half-box">
+          <label for="lastname">Sobrenome</label>
+          <input type="text" name="lastname" id="lastname" placeholder="Digite seu sobrenome" data-required data-only-letters>
+      </div>
+
+      <div class="half-box spacing">
+        <label for="CPF">CPF</label>
+        <input type="number" min="0" name="CPF" id="CPF" placeholder="Digite seu CPF" data-required data-min-length="11">
+      </div>
+
+      <div class="half-box spacing">
+        <label for="telefone">Telefone</label>
+        <input type="number" min="0" name="telefone" id="telefone"placeholder="Ex: (11) 999999999" data-require data-min-length="10">
+      </div>
+
+      <div class="half-box spacing">
+        <label for="lastname">Senha</label>
+        <input type="password" name="password" id="password" placeholder="Digite sua senha" data-password-validate data-required>
+      </div>
+
+      <div class="half-box">
+        <label for="passconfirmation">Confirmação de senha</label>
+        <input type="password" name="passconfirmation" id="passwordconfirmation" placeholder="Digite novamente sua senha" data-equal="password">
+      </div>
+
+      <div>
+        <input type="checkbox" name="agreement" id="agreement">
+        <label for="agreement" id="agreement-label">Eu li e aceito os <a href="#">termos de uso</a></label>
+      </div>
+
+      <!-- social media -->
+      <div class="social-media">
+        <ul class="list-social-media">
+            <a class="link-social-media" href="#">
+                <li class="item-social-media">
+                    <i class="fab fa-facebook-f"></i>        
+                </li>
+            </a>
+            <a class="link-social-media" href="#">
+                <li class="item-social-media">
+                    <i class="fab fa-google-plus-g"></i>
+                </li>
+            </a>
+            <a class="link-social-media" href="#">
+                <li class="item-social-media">
+                    <i class="fab fa-linkedin-in"></i>
+                </li>
+            </a>
+        </ul>
+    </div>
+    <!-- social media -->
+      <div class="full-box">
+        <a href="telalogin.html">
+        <input id="btn-submit" type="button" value="Registrar">
+        </a>
+      </div>
+    </form>
+  </div>
+  <p class="error-validation template"></p>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
